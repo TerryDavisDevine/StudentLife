@@ -4,7 +4,7 @@ html,body{
 .header,.footer{
     background-color: #4B006E;
     min-height: 10%;
-    margin-left: -10;
+    margin-left: 10;
 }
 
 .fraclass{
