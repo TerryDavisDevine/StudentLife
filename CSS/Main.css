@@ -5,34 +5,57 @@ html,body{
 }
 .header,.footer{
     background-color: #4B006E;
-    height: 10vh;
+    height: 9vh;
     width: 100%;
     align-items: center;
     display: flex;
     justify-content: flex-start;
-    padding: 0 20px;
 }
 
 #Logo{
-    height: 70px;
+    height: 9vh;
     width: auto;
     display: block;
     padding-top: 7vh;
+    padding-left: 4vh;
 }
 
-#navLink{
+.navLink{
     color: #F8F9FB;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
 }
 
-#navLink:visited{
+.navLink:visited{
     color: #F8F9FB;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
+ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding-top: 10vh;
+}
+
+li{
+    padding: 3vb;
+}
 
 .fraclass{
     height:1000px;
+}
+
+#profile{
+    height: 6vh;
+    width: auto;
+    display: block;
+    padding-top: 7vh;
+    padding-left: 80vh;
 }
 
 .dark {
