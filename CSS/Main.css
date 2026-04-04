@@ -20,6 +20,17 @@ html,body{
     padding-top: 7vh;
 }
 
+#navLink{
+    color: #F8F9FB;
+    text-decoration: none;
+}
+
+#navLink:visited{
+    color: #F8F9FB;
+    text-decoration: none;
+}
+
+
 .fraclass{
     height:1000px;
 }
