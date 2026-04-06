@@ -3,21 +3,25 @@ html,body{
     margin: 0;
     padding: 0;
 }
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
 .header,.footer{
     background-color: #4B006E;
-    height: 9vh;
+    min-height: 70px;
     width: 100%;
     align-items: center;
     display: flex;
-    justify-content: flex-start;
+    padding: 0 20px;
+    overflow: hidden;
 }
 
 #Logo{
-    height: 9vh;
+    height: 60px;
     width: auto;
-    display: block;
-    padding-top: 7vh;
-    padding-left: 4vh;
 }
 
 .navLink{
@@ -25,25 +29,30 @@ html,body{
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 18px;
+    font-size: clamp(14px, 1.2vw, 18px);
 }
 
 .navLink:visited{
     color: #F8F9FB;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+}
+
+.navLink:hover {
+    color: #d1b3ff;
 }
 
 ul{
     list-style-type: none;
     display: flex;
+    margin-right: auto;
     align-items: center;
-    padding-top: 10vh;
+    padding-top: 0;
+    gap: 20px;
+    margin: 0 30px;
+    flex-wrap: wrap;
 }
 
 li{
-    padding: 3vb;
+    padding: 0 10px;
 }
 
 .fraclass{
@@ -51,11 +60,12 @@ li{
 }
 
 #profile{
-    height: 6vh;
-    width: auto;
-    display: block;
-    padding-top: 7vh;
-    padding-left: 80vh;
+    height: 40px;
+    margin-left: auto;
+}
+
+.content{
+    flex: 1;
 }
 
 .dark {
