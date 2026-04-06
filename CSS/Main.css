@@ -9,7 +9,17 @@ body{
     flex-direction: column;
 }
 
-.header,.footer{
+.header{
+    background-color: #4B006E;
+    min-height: 75px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.footer{
     background-color: #4B006E;
     min-height: 75px;
     width: 100%;
