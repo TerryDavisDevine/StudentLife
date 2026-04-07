@@ -7,6 +7,7 @@ html,body{
 body{
     display: flex;
     flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*Start of header content*/
@@ -103,12 +104,14 @@ li{
     display: flex;
     gap: 15px;
     margin-left: 60px;
+    align-items: center;
 }
 
 .footer-socials img {
     height: 40px;
     width: 40px;
     cursor: pointer;
+    object-fit: contain;
 }
 
 .footer-socials img:hover {
