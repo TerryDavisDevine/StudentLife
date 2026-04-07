@@ -133,6 +133,110 @@ li{
 
 /*Start of main body content*/
 
+/*Start of carousel slider*/
+
+.carousel {
+    position: relative;
+    width: 70%;
+    margin: 40px auto;
+    border-radius: 16px;
+    overflow: visible;
+    min-height: 300px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.slide {
+    min-width: 100%;
+    background: linear-gradient(135deg, #4B006E, #1a0030);
+    padding: 60px 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    transform: scale(0.9);      
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    opacity: 0.5;
+}
+
+.slide.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.slide-subtitle {
+    color: #d1b3ff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.slide h1 {
+    color: white;
+    font-size: clamp(24px, 4vw, 42px);
+    margin: 0;
+}
+
+.slide-btn {
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.slide-btn:hover {
+    background-color: #ff1a1a;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(104, 104, 104, 0.2);
+    border: none;
+    color: white;
+    font-size: 40px;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.carousel-arrow.left { left: 10px; }
+.carousel-arrow.right { right: 10px; }
+.carousel-arrow:hover { background: rgba(255,255,255,0.4); }
+
+.carousel-dots {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(99, 99, 99, 0.4);
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #4B006E;
+}
+
+/*Start of carousel slider*/
 .content{
     flex: 1;
 }

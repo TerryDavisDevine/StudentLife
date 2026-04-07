@@ -3,7 +3,6 @@
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href = "CSS/Main.css">
-        <script type = "text/javascript" src="JS/Main.js"></script>
         <title>Home</title>
         <!--this link below will add a little image in the tab ourwebsites on when we have a logo created-->
 
@@ -22,7 +21,47 @@
             <img id="profile" src="Resources/images/Profile-Light.png" alt="Profile Icon">
         </div>
         <div class="content">
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="slide clone">
+                        <p class="slide-subtitle">YOUR CAREER</p>
+                        <h1>Build Your Path</h1>
+                        <button class="slide-btn">See Careers</button>
+                    </div>
+                    <div class="slide">
+                        <p class="slide-subtitle">ACADEMIC EXCELLENCE</p>
+                        <h1>Shaping Your Future</h1>
+                        <button class="slide-btn">Explore Opportunities</button>
+                    </div>
+                    <div class="slide">
+                        <p class="slide-subtitle">STUDENT LIFE</p>
+                        <h1>Get Involved</h1>
+                        <button class="slide-btn">View Events</button>
+                    </div>
+                    <div class="slide">
+                        <p class="slide-subtitle">YOUR CAREER</p>
+                        <h1>Build Your Path</h1>
+                        <button class="slide-btn">See Careers</button>
+                    </div>
+                    <div class="slide clone">
+                        <p class="slide-subtitle">ACADEMIC EXCELLENCE</p>
+                        <h1>Shaping Your Future</h1>
+                        <button class="slide-btn">Explore Opportunities</button>
+                    </div>
+                </div>
+
+                <button class="carousel-arrow left" onclick="moveSlide(-1)">&#8249;</button>
+                <button class="carousel-arrow right" onclick="moveSlide(1)">&#8250;</button>
+
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="goToSlide(0)"></span>
+                    <span class="dot" onclick="goToSlide(1)"></span>
+                    <span class="dot" onclick="goToSlide(2)"></span>
+                </div>
+            </div>
+
             <button onclick="toggleDark()">Dark Mode</button>
+        
         </div>
 
         <div class = "footer">
@@ -45,6 +84,7 @@
             </div>
 
         </div>
-        
+        <script type = "text/javascript" src="JS/Main.js"></script>
+        <script type="text/javascript" src="JS/index.js"></script>
     </body>
 </html>
