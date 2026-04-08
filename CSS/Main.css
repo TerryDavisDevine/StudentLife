@@ -86,12 +86,12 @@ nav ul{
     margin: 0 30px;
     padding: 0;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
-nav li li{
-    padding: 0 10px;
+nav ul li{
+    padding: 0 18px;
 }
 
 .header-icons {
@@ -310,8 +310,8 @@ nav li li{
 .section-cards {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    padding: 40px 5%;
+    gap: 40px;
+    padding: 50px 6%;
     background-color: var(--bg);
     flex-wrap: wrap;
 }
@@ -429,7 +429,7 @@ nav li li{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
- 
+
 .event-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 22px rgba(75,0,110,0.3);
@@ -438,7 +438,7 @@ nav li li{
 .event-card-image-wrap {
     position: relative;
     width: 100%;
-    aspect-ratio: 4/3;
+    aspect-ratio: 3/2;
     background-color: #FF00BF; /* replace with <img> */
     overflow: hidden;
 }
@@ -466,7 +466,7 @@ nav li li{
 }
  
 .event-card-body {
-    padding: 14px 16px;
+    padding: 18px 16px 20px;
     background-color: var(--card-text-bg);
     transition: background-color var(--transition);
 }
@@ -511,11 +511,12 @@ nav li li{
  
 .campus-card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 3fr;  /* image left, text right */
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 3px 12px rgba(0,0,0,0.12);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 160px;  /* fixed height keeps it compact */
 }
  
 .campus-card:hover {
@@ -526,10 +527,10 @@ nav li li{
 .campus-card-image {
     width: 100%;
     height: 100%;
+    min-height: 160px;
     object-fit: cover;
     display: block;
-    min-height: 180px;
-    background-color: #FF00BF; /* replace with <img> */
+    background-color: #FF00BF;
 }
  
 .campus-card-body {
@@ -650,6 +651,9 @@ nav li li{
     pointer-events: none;
     transition: opacity 0.3s ease, transform 0.3s ease, background-color var(--transition);
     z-index: 500;
+    outline: 2px solid
+    rgba(255,255,255,0.6);
+    outline-offset: 2px;
 }
  
 #scrollTop.visible {
@@ -692,10 +696,15 @@ nav li li{
         border-radius: 0;
     }
  
-    .carousel-arrow { font-size: 28px; padding: 4px 10px; }
+    .carousel-arrow { 
+        font-size: 28px; 
+        padding: 4px 10px; 
+        left: -18px;
+        right: -18px;
+    }
     .carousel-dots  { bottom: 10px; }
  
-    .section-cards  { padding: 24px 4%; gap: 16px; }
+    .section-cards  { padding: 24px 4%; gap: 55px; }
  
     .events-grid { grid-template-columns: repeat(2, 1fr); }
  

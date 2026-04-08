@@ -1,7 +1,14 @@
+window.addEventListener('DOMContentLoaded', () => {
+    updateCarousel(false);
+});
+
 const darkToggle = document.getElementById('darkToggle');
 const moonIcon   = document.getElementById('moonIcon');
 const sunIcon    = document.getElementById('sunIcon');
- 
+
+let currentSlide = 1;
+let isTransitioning = false;
+
 // Restore saved preference on load
 if (localStorage.getItem('darkMode') === 'true') {
     document.body.classList.add('dark');
@@ -44,8 +51,7 @@ scrollTopBtn.addEventListener('click', () => {
 
 //Start of carousel script
 
-let currentSlide = 1;
-let isTransitioning = false;
+
 
 function moveSlide(direction) {
     if (isTransitioning) return;
