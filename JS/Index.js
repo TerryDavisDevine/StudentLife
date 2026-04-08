@@ -1,3 +1,47 @@
+const darkToggle = document.getElementById('darkToggle');
+const moonIcon   = document.getElementById('moonIcon');
+const sunIcon    = document.getElementById('sunIcon');
+ 
+// Restore saved preference on load
+if (localStorage.getItem('darkMode') === 'true') {
+    document.body.classList.add('dark');
+    moonIcon.style.display = 'none';
+    sunIcon.style.display  = 'block';
+}
+ 
+darkToggle.addEventListener('click', () => {
+    const isDark = document.body.classList.toggle('dark');
+    moonIcon.style.display = isDark ? 'none'  : 'block';
+    sunIcon.style.display  = isDark ? 'block' : 'none';
+    localStorage.setItem('darkMode', isDark);
+});
+ 
+ 
+/* ─── HAMBURGER MENU ─── */
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobileNav');
+ 
+hamburger.addEventListener('click', () => {
+    mobileNav.classList.toggle('open');
+});
+ 
+// Close mobile nav when a link is tapped
+mobileNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => mobileNav.classList.remove('open'));
+});
+ 
+ 
+/* ─── SCROLL TO TOP ─── */
+const scrollTopBtn = document.getElementById('scrollTop');
+ 
+window.addEventListener('scroll', () => {
+    scrollTopBtn.classList.toggle('visible', window.scrollY > 300);
+});
+ 
+scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
 //Start of carousel script
 
 let currentSlide = 1;
@@ -5,30 +49,19 @@ let isTransitioning = false;
 
 function moveSlide(direction) {
     if (isTransitioning) return;
+    isTransitioning = true;
 
     const slides = document.querySelectorAll('.slide');
     currentSlide = (currentSlide + direction + slides.length) % slides.length;
     updateCarousel(true);
 
-    if (currentSlide === 0) {
-        setTimeout(() => {
-            currentSlide = slides.length - 2; // jump to real last slide
-            updateCarousel(false); // false = no animation on the jump
-        }, 400); // matches your 0.4s CSS transition
-    }
-
-    if (currentSlide === slides.length - 1) {
-        setTimeout(() => {
-            currentSlide = 1; // jump to real first slide
-            updateCarousel(false);
-        }, 400);
-    }
 }
 
 function goToSlide(index) {
-    currentSlide = index + 1;
-    updateCarousel(true);
+currentSlide = index + 1;
+updateCarousel(true);
 }
+
 
 function updateCarousel(animate) {
     const track = document.querySelector('.carousel-track');
@@ -58,6 +91,7 @@ document.querySelector('.carousel-track').addEventListener('transitionend', () =
 
     isTransitioning = false; // allow input again
 });
+
 
 // Auto-advance every 5 seconds
 setInterval(() => moveSlide(1), 5000);

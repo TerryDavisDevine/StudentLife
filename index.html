@@ -10,26 +10,54 @@
         <link rel="icon" href="Resources/images/" type="image/x-icon">
     </head>
     <body>
-        <div class = "header">
+        <header class = "header">
             <img id="Logo" src="Resources/images/Logo-Sqr.png" alt="Prince's University Logo">
-            <ul>
-                <li><a class="navLink" href="index.html">Home</a></li>
-                <li><a class="navLink" href="StudentServices.html">Student Services</a></li>
-                <li><a class="navLink" href="Career.html">Careers</a></li>
-                <li><a class="navLink" href="StudentEvents.html">Student Events</a></li>
-                <li><a class="navLink" href="Contact.html">Contacts</a></li>
-            </ul>
+
+            <nav>
+                <ul>
+                    <li><a class="navLink" href="index.html">Home</a></li>
+                    <li><a class="navLink" href="StudentServices.html">Student Services</a></li>
+                    <li><a class="navLink" href="Career.html">Careers</a></li>
+                    <li><a class="navLink" href="StudentEvents.html">Student Events</a></li>
+                    <li><a class="navLink" href="Contact.html">Contacts</a></li>
+                </ul>
+            </nav>
+
+            <button id="darkToggle" aria-label="Toggle dark mode">
+                <img id="moonIcon" src="Resources/images/moon.png" alt="Switch to dark mode">
+                <img id="sunIcon"  src="Resources/images/sun.png"  alt="Switch to light mode" style="display:none;">
+            </button>
+
             <img id="profile" src="Resources/images/Profile-Light.png" alt="Profile Icon">
+
+            <button id="hamburger" aria-label="Open menu">
+            <span></span><span></span><span></span>
+            </button>
+
+        </header>
+
+        <!-- Mobile nav-bar -->
+        <div id="mobileNav">
+            <a href="index.html">Home</a>
+            <a href="StudentServices.html">Student Services</a>
+            <a href="Career.html">Careers</a>
+            <a href="StudentEvents.html">Student Events</a>
+            <a href="Contact.html">Contacts</a>
         </div>
+
+
+
         <div class="content">
             <div class="carousel">
                 <div class="carousel-track">
+                    <!-- Clone of last slide -->
                     <div class="slide clone">
                         <p class="slide-subtitle">YOUR CAREER</p>
                         <h1>Build Your Path</h1>
                         <button class="slide-btn">See Careers</button>
                     </div>
-                    <div class="slide">
+                    <!-- Real slides -->
+                    <div class="slide active">
                         <p class="slide-subtitle">ACADEMIC EXCELLENCE</p>
                         <h1>Shaping Your Future</h1>
                         <button class="slide-btn">Explore Opportunities</button>
@@ -44,6 +72,7 @@
                         <h1>Build Your Path</h1>
                         <button class="slide-btn">See Careers</button>
                     </div>
+                    <!-- Clone of first slide -->
                     <div class="slide clone">
                         <p class="slide-subtitle">ACADEMIC EXCELLENCE</p>
                         <h1>Shaping Your Future</h1>
@@ -60,17 +89,152 @@
                     <span class="dot" onclick="goToSlide(2)"></span>
                 </div>
             </div>
-
-            <button onclick="toggleDark()">Dark Mode</button>
-        
         </div>
 
-        <div class = "footer">
+    <!-- Navigation and information section -->
+    <section class="section-cards">
+ 
+        <!-- Card 1: Student Services -->
+        <a href="StudentServices.html" class="section-card">
+            <!--  ↓ Replace the div below with: <img src="Resources/images/your-image.jpg" class="section-card-image" alt="Student Services"> -->
+            <div class="section-card-image"></div>
+            <div class="section-card-body">
+                <p class="section-card-title">Student Services</p>
+                <p class="section-card-desc">Information about other pages</p>
+            </div>
+        </a>
+ 
+        <!-- Card 2: Careers -->
+        <a href="Career.html" class="section-card">
+            <div class="section-card-image"></div>
+            <div class="section-card-body">
+                <p class="section-card-title">Careers</p>
+                <p class="section-card-desc">Information about other pages</p>
+            </div>
+        </a>
+ 
+        <!-- Card 3: Student Events -->
+        <a href="StudentEvents.html" class="section-card">
+            <div class="section-card-image"></div>
+            <div class="section-card-body">
+                <p class="section-card-title">Student Events</p>
+                <p class="section-card-desc">Information about other pages</p>
+            </div>
+        </a>
+ 
+    </section>
+ 
+    <!-- ── UPCOMING EVENTS ── -->
+    <section class="events-section">
+        <div class="events-header">
+            <h2>Upcoming Events</h2>
+            <a href="StudentEvents.html" class="btn-all-events">All Events &rarr;</a>
+        </div>
+ 
+        <div class="events-grid">
+ 
+            <!-- Event Card 1 -->
+            <div class="event-card">
+                <div class="event-card-image-wrap">
+                    <!--  ↓ Replace div with: <img src="Resources/images/event1.jpg" alt="Event Name"> -->
+                    <span class="event-date-pill">Apr 12</span>
+                </div>
+                <div class="event-card-body">
+                    <p class="event-card-title">Event Title Here</p>
+                    <p class="event-card-desc">Information about other pages</p>
+                </div>
+            </div>
+ 
+            <!-- Event Card 2 -->
+            <div class="event-card">
+                <div class="event-card-image-wrap">
+                    <span class="event-date-pill">Apr 18</span>
+                </div>
+                <div class="event-card-body">
+                    <p class="event-card-title">Event Title Here</p>
+                    <p class="event-card-desc">Information about other pages</p>
+                </div>
+            </div>
+ 
+            <!-- Event Card 3 -->
+            <div class="event-card">
+                <div class="event-card-image-wrap">
+                    <span class="event-date-pill">Apr 25</span>
+                </div>
+                <div class="event-card-body">
+                    <p class="event-card-title">Event Title Here</p>
+                    <p class="event-card-desc">Information about other pages</p>
+                </div>
+            </div>
+ 
+            <!-- Event Card 4 -->
+            <div class="event-card">
+                <div class="event-card-image-wrap">
+                    <span class="event-date-pill">May 2</span>
+                </div>
+                <div class="event-card-body">
+                    <p class="event-card-title">Event Title Here</p>
+                    <p class="event-card-desc">Information about other pages</p>
+                </div>
+            </div>
+ 
+        </div>
+    </section>
+ 
+    <!-- ── CAMPUSES ── -->
+    <section class="campuses-section">
+        <h2>Campuses</h2>
+ 
+        <div class="campuses-grid">
+ 
+            <!-- Campus Card 1 -->
+            <div class="campus-card">
+                <!--  ↓ Replace div with: <img src="Resources/images/campus1.jpg" class="campus-card-image" alt="Campus Name"> -->
+                <div class="campus-card-image"></div>
+                <div class="campus-card-body">
+                    <p class="campus-card-title">Campus Name</p>
+                    <p class="campus-card-desc">Information about this campus location.</p>
+                </div>
+            </div>
+ 
+            <!-- Campus Card 2 -->
+            <div class="campus-card">
+                <div class="campus-card-image"></div>
+                <div class="campus-card-body">
+                    <p class="campus-card-title">Campus Name</p>
+                    <p class="campus-card-desc">Information about this campus location.</p>
+                </div>
+            </div>
+ 
+            <!-- Campus Card 3 -->
+            <div class="campus-card">
+                <div class="campus-card-image"></div>
+                <div class="campus-card-body">
+                    <p class="campus-card-title">Campus Name</p>
+                    <p class="campus-card-desc">Information about this campus location.</p>
+                </div>
+            </div>
+ 
+            <!-- Campus Card 4 -->
+            <div class="campus-card">
+                <div class="campus-card-image"></div>
+                <div class="campus-card-body">
+                    <p class="campus-card-title">Campus Name</p>
+                    <p class="campus-card-desc">Information about this campus location.</p>
+                </div>
+            </div>
+ 
+        </div>
+    </section>
+ 
+</div>
+
+<!-- end .content -->
+
+        <footer class = "footer">
             <div class="footer-content">
                 <img src="Resources/images/Logo-Sqr.png" alt="Prince's University Logo">
-                <p>princes st, Edinburgh<br>
-                Scotland, EH2 2ER
-                </p>
+                <p>princes st, Edinburgh<br>Scotland, EH2 2ER</p>
             </div>
 
             <div class="footer-socials">
@@ -84,7 +248,10 @@
                 <a href="#">Terms of service</a>
             </div>
 
-        </div>
+        </footer>
+
+        <button id="scrollTop" aria-label="Scroll to top">&#8679;</button>
+        
         <script type = "text/javascript" src="JS/Main.js"></script>
         <script type="text/javascript" src="JS/index.js"></script>
     </body>
