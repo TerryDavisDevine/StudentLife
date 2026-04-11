@@ -728,3 +728,28 @@ nav ul li{
     .campus-card { grid-template-columns: 1fr; }
     .campus-card-image { min-height: 180px; }
 }
+.event{
+    border-color: #000000;
+    border: solid;
+    border-width: 1px;
+    border-radius: 25px;
+    min-width: 40%;
+    width: fit-content;
+    margin:auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: fit-content;
+    overflow: hidden;
+}
+.eventImage{
+    float: left;
+}
+.eventTextTitle{
+    display: inline-block;
+    margin: 0%;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+.eventText{
+    margin: 0%;
+}
