@@ -4,9 +4,17 @@
         "Name": "Test",
         "Date": "1/1/2000",
         "Time": "1:00 PM",
-        "Location": "Test2",
+        "Location": "Testloc",
         "Desc": "Test event",
-        "Img":"../images/test.jpeg"
+        "Img":"../Resources/images/Facebook.png"
+      },
+      {
+        "Name": "Tea and coffee",
+        "Date": "14/12/2026",
+        "Time": "1:00 PM",
+        "Location": "Belfast Campus",
+        "Desc": "Free tea and coffee",
+        "Img":"../Resources/images/Twitter.png"
       }
     ]
   }
