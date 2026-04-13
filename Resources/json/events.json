@@ -15,6 +15,30 @@
         "Location": "Belfast Campus",
         "Desc": "Free tea and coffee",
         "Img":"../Resources/images/Twitter.png"
+      },
+      {
+        "Name": "Tea and coffee",
+        "Date": "14/12/2026",
+        "Time": "1:00 PM",
+        "Location": "Belfast Campus",
+        "Desc": "Free tea and coffee",
+        "Img":"../Resources/images/Twitter.png"
+      },
+      {
+        "Name": "Tea and coffee",
+        "Date": "14/12/2026",
+        "Time": "1:00 PM",
+        "Location": "Belfast Campus",
+        "Desc": "Free tea and coffee",
+        "Img":"../Resources/images/Twitter.png"
+      },
+      {
+        "Name": "Tea and coffee",
+        "Date": "14/12/2026",
+        "Time": "1:00 PM",
+        "Location": "Belfast Campus",
+        "Desc": "Free tea and coffee",
+        "Img":"../Resources/images/Twitter.png"
       }
     ]
   }

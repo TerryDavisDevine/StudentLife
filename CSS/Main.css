@@ -753,3 +753,17 @@ nav ul li{
 .eventText{
     margin: 0%;
 }
+.eventHeader{
+    text-align: center;
+    color: white;
+    height: 100px;
+    width: 40%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    background-color: var(--brand-purple-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
