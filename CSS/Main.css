@@ -35,6 +35,7 @@ html,body{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body{
@@ -236,6 +237,7 @@ nav ul li{
     opacity: 0.5;
     text-align: left;
     border-radius: 16px;
+    flex-shrink: 0;
 }
 
 
