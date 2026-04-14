@@ -732,18 +732,18 @@ nav ul li{
     border: solid;
     border-width: 1px;
     border-radius: 25px;
-    min-width: 40%;
-    width: fit-content;
+    width: 40%;
     margin:auto;
     margin-top: 25px;
     margin-bottom: 25px;
     height: fit-content;
     overflow: hidden;
+    display: flex;
 }
 .eventImage{
     float: left;
-    max-height: inherit;
-    max-width: 10%;
+    height: 100%;
+    max-width: 100px;
 }
 .eventTextTitle{
     display: inline-block;
