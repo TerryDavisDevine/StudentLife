@@ -6,7 +6,7 @@
         "Time": "1:00 PM",
         "Location": "Testloc",
         "Desc": "Test event",
-        "Img":"../Resources/images/Facebook.png"
+        "Img":"/StudentLife/Resources/images/Facebook.png"
       },
       {
         "Name": "Tea and coffee",
@@ -14,7 +14,7 @@
         "Time": "1:00 PM",
         "Location": "Belfast Campus",
         "Desc": "Free tea and coffee",
-        "Img":"../Resources/images/Twitter.png"
+        "Img":"/StudentLife/Resources/images/Twitter.png"
       },
       {
         "Name": "Tea and coffee",
@@ -22,7 +22,7 @@
         "Time": "1:00 PM",
         "Location": "Belfast Campus",
         "Desc": "Free tea and coffee",
-        "Img":"../Resources/images/Twitter.png"
+        "Img":"/StudentLife/Resources/images/Twitter.png"
       },
       {
         "Name": "Tea and coffee",
@@ -30,7 +30,7 @@
         "Time": "1:00 PM",
         "Location": "Belfast Campus",
         "Desc": "Free tea and coffee",
-        "Img":"../Resources/images/Twitter.png"
+        "Img":"/StudentLife/Resources/images/Twitter.png"
       },
       {
         "Name": "Tea and coffee",
@@ -38,7 +38,15 @@
         "Time": "1:00 PM",
         "Location": "Belfast Campus",
         "Desc": "Free tea and coffee",
-        "Img":"../Resources/images/Twitter.png"
+        "Img":"/StudentLife/Resources/images/Twitter.png"
+      },
+      {
+        "Name": "Tea and coffee",
+        "Date": "14/12/2026",
+        "Time": "1:00 PM",
+        "Location": "Belfast Campus",
+        "Desc": "Free tea and coffee",
+        "Img":"/StudentLife/Resources/images/Twitter.png"
       }
     ]
   }
