@@ -135,6 +135,11 @@ nav ul li{
     transition: fill var(--transition);
 }
 
+#moonIcon, #sunIcon{
+    height: 35px;
+    width: 35px;
+}
+
 /* Hamburger button (mobile only) */
 #hamburger {
     display: none;
