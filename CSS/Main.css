@@ -513,6 +513,7 @@ nav ul li{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+    justify-items: center;
 }
  
 .campus-card {
@@ -522,7 +523,8 @@ nav ul li{
     overflow: hidden;
     box-shadow: 0 3px 12px rgba(0,0,0,0.12);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    min-height: 160px;  /* fixed height keeps it compact */
+    height: 160px;  /* fixed height keeps it compact */
+    width: 500px;
 }
  
 .campus-card:hover {
@@ -533,7 +535,7 @@ nav ul li{
 .campus-card-image {
     width: 100%;
     height: 100%;
-    min-height: 160px;
+    height: 160px;
     object-fit: cover;
     display: block;
     background-color: #FF00BF;
@@ -541,7 +543,7 @@ nav ul li{
  
 .campus-card-body {
     background-color: var(--card-text-bg);
-    padding: 20px 18px;
+    padding: 14px 14px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -555,14 +557,14 @@ nav ul li{
  
 .campus-card-title {
     color: #ffffff;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     margin: 0;
 }
  
 .campus-card-desc {
     color: #cccccc;
-    font-size: 13px;
+    font-size: 12px;
     margin: 0;
 }
 
