@@ -1,7 +1,7 @@
 //get the events from the json file
 async function getEvents(){
   try{
-    let response = await fetch("../Resources/json/events.json");
+    let response = await fetch("/StudentLife/Resources/json/events.json");
     let text = await response.text();
     let data = JSON.parse(text);
     return data;
