@@ -742,6 +742,8 @@ nav ul li{
 }
 .eventImage{
     float: left;
+    max-height: inherit;
+    max-width: 10%;
 }
 .eventTextTitle{
     display: inline-block;
