@@ -36,10 +36,13 @@ function createEvent(details){
   let img = createElement("img",details.Img);
   img.setAttribute("class","eventImage");
   div.appendChild(img);
-  div.appendChild(createElement("h3",`${details.Name} - ${details.Location}`,"class","eventText eventTextTitle"));
-  div.appendChild(createElement("h4",details.Date));
-  div.appendChild(createElement("h4",details.Time));
-  div.appendChild(createElement("h4",details.Desc));
+  let content = document.createElement("div");
+  content.setAttribute("class","eventContent");
+  content.appendChild(createElement("h3",`${details.Name} - ${details.Location}`,"class","eventText eventTextTitle"));
+  content.appendChild(createElement("h4",details.Date));
+  content.appendChild(createElement("h4",details.Time));
+  content.appendChild(createElement("h4",details.Desc));
+  div.appendChild(content);
   return div;
 }
 //add elements to the page
