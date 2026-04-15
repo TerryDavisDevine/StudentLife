@@ -434,6 +434,8 @@ nav ul li{
     box-shadow: 0 3px 10px rgba(0,0,0,0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 .event-card:hover {
@@ -525,6 +527,8 @@ nav ul li{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 160px;  /* fixed height keeps it compact */
     width: 500px;
+    will-change: transform;
+    transform: translateZ(0);
 }
  
 .campus-card:hover {
@@ -712,7 +716,12 @@ nav ul li{
     }
     .carousel-dots  { bottom: 10px; }
  
-    .section-cards  { padding: 24px 4%; gap: 55px; }
+    .section-cards  { 
+        padding: 24px 4%; 
+        gap: 55px;
+        will-change: transform;
+        transform: translateZ(0);
+    }
  
     .events-grid { grid-template-columns: repeat(2, 1fr); }
  
