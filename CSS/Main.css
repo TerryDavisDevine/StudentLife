@@ -665,8 +665,7 @@ nav ul li{
     pointer-events: none;
     transition: opacity 0.3s ease, transform 0.3s ease, background-color var(--transition);
     z-index: 500;
-    outline: 2px solid
-    rgba(255,255,255,0.6);
+    outline: 2px solid rgba(255,255,255,0.6);
     outline-offset: 2px;
 }
  
