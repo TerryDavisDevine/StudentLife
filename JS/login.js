@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $("#loginForm").submit(function(e){
         e.preventDefault();
-        let message = $("#message")
+        let message = $("#errors")
         let email = $("#email").val().trim();
         let password = $("#password").val().trim();
         if(email ==""|| password== ""){

@@ -18,6 +18,10 @@ $(document).ready(function(){
             return status.html("The message must be longer than 10 characters");
         }
         status.css("color","green");
+        $("#name").val("");
+        $("#contactEmail").val("");
+        $("#subject").val("");
+        $("#message").val("");
         return status.html("Contact form submitted")
     })
 })
