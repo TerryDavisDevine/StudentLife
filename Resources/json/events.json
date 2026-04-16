@@ -42,8 +42,8 @@
         "Time": "13:00 - 15:00",
         "Location": "Beijing campus football pitch",
         "Desc": "A friendly student football match between two teams of our physical education students, all students are welcome to watch the match",
-        "Img":"/StudentLife/Resources/images/football.webp",
-        "alt":"../Resources/images/football.webp"
+        "Img":"/StudentLife/Resources/images/Football.png",
+        "alt":"../Resources/images/Football.png"
       }
     ]
   }
