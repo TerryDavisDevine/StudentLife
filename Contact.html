@@ -58,23 +58,28 @@
 
         <div class="content">
             <div class = "formContainer">
-                <div class="formImage"><p>hallo</p></div>
+                <div class="formImage">
+                    <img src="Resources/images/customerExample.webp">
+                </div>
                 <div class = "formDiv">
-                    <form class = "ContactForm" id = "contactForm">
-                        <label for="name">Name:</label>
-                        <input type="text" id = "name">
+                    <h2>Contact form</h2>
+                    <div class = "formBack">
+                        <form class = "ContactForm" id = "contactForm">
+                            <label for="name">Name:</label>
+                            <input type="text" id = "name">
 
-                        <label for="email">Email:</label>
-                        <input type = "text" id = "email">
+                            <label for="contactEmail">Email:</label>
+                            <input type = "text" id = "contactEmail">
 
-                        <label for="subject">Subject:</label>
-                        <input type = "text" id = "subject">
+                            <label for="subject">Subject:</label>
+                            <input type = "text" id = "subject">
 
-                        <label for="message">Message:</label>
-                        <textarea name="message" rows="10" cols="30" id = "message"></textarea>
-                        <input type="submit">
-                        <p id ="status"></p>
-                    </form> 
+                            <label for="message">Message:</label>
+                            <textarea name="message" rows="10" cols="30" id = "message"></textarea>
+                            <input type="submit">
+                            <p id ="status"></p>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
