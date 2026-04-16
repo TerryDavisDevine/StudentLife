@@ -3,7 +3,7 @@ $(document).ready(function(){
         e.preventDefault();
         let status = $("#status");
         let name = $("#name").val().trim();
-        let email = $("#email").val().trim();
+        let email = $("#contactEmail").val().trim();
         let subject = $("#subject").val().trim();
         let message = $("#message").val().trim();
         status.css("color","red");
