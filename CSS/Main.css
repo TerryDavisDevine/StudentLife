@@ -898,3 +898,29 @@ nav ul li{
   background: var(--brand-purple);
   color: white;
 }
+
+/*contact page*/
+.ContactForm{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ContactForm > *{
+    border-radius: 9px;
+    font-size: large;
+    width: 500px;
+}
+.formImage{
+    height: 100%;
+    width:50%;
+    background-color: #000000;
+}
+.formDiv{
+    height: 100%;
+    width:50%;
+}
+.formContainer{
+    display: flex;
+    flex-direction: row;
+}
