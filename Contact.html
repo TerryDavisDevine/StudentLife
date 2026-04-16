@@ -2,9 +2,10 @@
 <html>
     <head>
         <link rel="stylesheet" href="CSS/Main.css">
-        <script tpye = "text/javascript" src = "JS/Index.js"></script>
-        <script tpye = "text/javascript" src = "JS/contact.js"></script>
-        <title>Events</title>
+        <script src="https://code.jquery.com/jquery-4.0.0.min.js"defer></script>
+        <script tpye = "text/javascript" src = "JS/Index.js"defer></script>
+        <script tpye = "text/javascript" src = "JS/contacts.js"defer></script>
+        <title>Contact</title>
         <!--this link below will add a little image in the tab ourwebsites on when we have a logo created-->
         <link rel="icon" href="images/" type="image/x-icon">
     </head>
@@ -27,7 +28,19 @@
                     <img id="moonIcon" src="Resources/images/Sun.png" alt="Switch to dark mode">
                     <img id="sunIcon"  src="Resources/images/Moon.png"  alt="Switch to light mode" style="display:none;">
                 </button>
-                <img id="profile" src="Resources/images/Profile-Light.png" alt="Profile Icon">
+                <div class = "dropdown">
+                    <img id="profile" src="Resources/images/Profile-Light.png" alt="Profile Icon">
+                    <div class = "dropdown-content">
+                        <form class = "loginForm" id ="loginForm">
+                            <label for ="email">Email:</label>
+                            <input type = "text" name="email" id ="email">
+                            <label for ="password">Password:</label>
+                            <input type = "password" name = "password" id="password">
+                            <input type = "submit" id = "loginButton">
+                            <p id = "message"></p>
+                        </form>
+                    </div>
+                </div>
                 <button id="hamburger" aria-label="Open menu">
                 <span></span><span></span><span></span>
                 </button>
@@ -47,13 +60,20 @@
             <div class = "formContainer">
                 <div class="formImage"><p>hallo</p></div>
                 <div class = "formDiv">
-                    <form class = "ContactForm">
-                        <label for="Name">Name:</label>
-                        <input type="text" name = "Name">
-                        <label for="Email">Email:</label>
-                        <input type = "text" name = "Email">
-                        <label for="Message">Message:</label>
-                        <textarea name="message" rows="10" cols="30" name = "Message"></textarea>
+                    <form class = "ContactForm" id = "contactForm">
+                        <label for="name">Name:</label>
+                        <input type="text" id = "name">
+
+                        <label for="email">Email:</label>
+                        <input type = "text" id = "email">
+
+                        <label for="subject">Subject:</label>
+                        <input type = "text" id = "subject">
+
+                        <label for="message">Message:</label>
+                        <textarea name="message" rows="10" cols="30" id = "message"></textarea>
+                        <input type="submit">
+                        <p id ="status"></p>
                     </form> 
                 </div>
             </div>

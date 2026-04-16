@@ -1,3 +1,27 @@
+$(document).ready(function(){
+    $("#contactForm").submit(function(e){
+        e.preventDefault();
+        let status = $("#status");
+        let name = $("#name").val().trim();
+        let email = $("#email").val().trim();
+        let subject = $("#subject").val().trim();
+        let message = $("#message").val().trim();
+        status.css("color","red");
+        if (name === "" || subject === "" || email ===""||message==="") {
+            return status.html("All fields must be filled in");
+        }
+        let pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!email.match(pattern)) {
+            return status.html("A valid email must be provided");
+        }
+        if (message.length < 10) {
+            return status.html("The message must be longer than 10 characters");
+        }
+        status.css("color","green");
+        return status.html("Contact form submitted")
+    })
+})
+/*
 function validateForm() {
 
   let valid = true;
@@ -40,7 +64,7 @@ function validateForm() {
 
   return false;
 }
-
+*/
 /* SMART SELECT */
 function selectSubject(value) {
   document.getElementById("subject").value = value;

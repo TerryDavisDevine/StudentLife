@@ -1,7 +1,6 @@
 $(document).ready(function(){
     $("#loginForm").submit(function(e){
         e.preventDefault();
-        console.log("form submitted");
         let message = $("#message")
         let email = $("#email").val().trim();
         let password = $("#password").val().trim();
@@ -16,5 +15,5 @@ $(document).ready(function(){
             return message.html("Passwords must be at least 6 characters");
         }
         message.html("Account could not be found");
-    });
-});
+    })
+})

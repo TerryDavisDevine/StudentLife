@@ -28,7 +28,19 @@
                     <img id="moonIcon" src="Resources/images/Sun.png" alt="Switch to dark mode">
                     <img id="sunIcon"  src="Resources/images/Moon.png"  alt="Switch to light mode" style="display:none;">
                 </button>
-                <img id="profile" src="Resources/images/Profile-Light.png" alt="Profile Icon">
+                <div class = "dropdown">
+                    <img id="profile" src="Resources/images/Profile-Light.png" alt="Profile Icon">
+                    <div class = "dropdown-content">
+                        <form class = "loginForm" id ="loginForm">
+                            <label for ="email">Email:</label>
+                            <input type = "text" name="email" id ="email">
+                            <label for ="password">Password:</label>
+                            <input type = "password" name = "password" id="password">
+                            <input type = "submit" id = "loginButton">
+                            <p id = "message"></p>
+                        </form>
+                    </div>
+                </div>
                 <button id="hamburger" aria-label="Open menu">
                 <span></span><span></span><span></span>
                 </button>
