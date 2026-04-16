@@ -41,13 +41,13 @@
         <div class = "dropdown">
             <img id="profile" src="Resources/images/Profile-Light.png" alt="Profile Icon">
             <div class = "dropdown-content">
-                <form class = "loginForm" id ="loginForm">
+                <form class = "loginForm" id ="loginForm" autocomplete="off">
                     <label for ="email">Email:</label>
                     <input type = "text" name="email" id ="email">
                     <label for ="password">Password:</label>
                     <input type = "password" name = "password" id="password">
                     <input type = "submit" id = "loginButton">
-                    <p id = "message"></p>
+                    <p id = "errors"></p>
                 </form>
             </div>
         </div>
@@ -154,6 +154,8 @@
 
 
 <!-- ================= SCRIPTS ================= -->
+<script src="https://code.jquery.com/jquery-4.0.0.min.js"defer></script>
+<script type = "text/javascript" src = "JS/login.js"defer></script>
 <script src="JS/Main.js" defer></script>
 <script src="JS/Index.js" defer></script>
 
