@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //scroll button
     const scrollTopBtn = document.getElementById('scrollTop');
     window.addEventListener('scroll', () => {
-        scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+        scrollTopBtn.classList.toggle('visible', window.scrollY > 300);
     });
 
     scrollTopBtn.addEventListener('click', () => {
