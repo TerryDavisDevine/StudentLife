@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const scrollTopBtn = document.getElementById('scrollTop');
 
     window.addEventListener('scroll', () => {
-        scrollTopBtn.classList.toggle('visible', window.scrollY > 300);
+        scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
     });
 
     scrollTopBtn.addEventListener('click', () => {
