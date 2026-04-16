@@ -33,20 +33,16 @@ function goToSlide(index) {
     currentSlide = index + 1;
     updateCarousel(true);
 }
-
+    //dark mode
 document.addEventListener('DOMContentLoaded', () => {
-
-    // --- DARK MODE ---
     const darkToggle = document.getElementById('darkToggle');
     const moonIcon   = document.getElementById('moonIcon');
     const sunIcon    = document.getElementById('sunIcon');
-
     if (localStorage.getItem('darkMode') === 'true') {
         document.body.classList.add('dark');
         moonIcon.style.display = 'none';
         sunIcon.style.display  = 'block';
     }
-
     darkToggle.addEventListener('click', () => {
         const isDark = document.body.classList.toggle('dark');
         moonIcon.style.display = isDark ? 'none' : 'block';
@@ -54,10 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('darkMode', isDark);
     });
 
-    // --- HAMBURGER ---
+    //hamburger
     const hamburger = document.getElementById('hamburger');
     const mobileNav = document.getElementById('mobileNav');
-
     hamburger.addEventListener('click', () => {
         mobileNav.classList.toggle('open');
     });
@@ -66,9 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', () => mobileNav.classList.remove('open'));
     });
 
-    // --- SCROLL BUTTON ---
+    //scroll button
     const scrollTopBtn = document.getElementById('scrollTop');
-
     window.addEventListener('scroll', () => {
         scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
     });
@@ -77,9 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // --- CAROUSEL ---
+    //img carousel
     const track = document.querySelector('.carousel-track');
-
     if (track) {
         track.addEventListener('transitionend', () => {
             const slides = document.querySelectorAll('.slide');
@@ -97,7 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
             isTransitioning = false;
         });
     }
-
     setInterval(() => moveSlide(1), 5000);
     updateCarousel(false);
 });
