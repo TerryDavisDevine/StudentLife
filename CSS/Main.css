@@ -781,17 +781,22 @@ nav ul li{
     margin-top: 5px;
     margin-bottom: 20px;
     border-radius: 25px;
-    background-color: var(--brand-purple-light);
+    background-color: var(--brand-purple);
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0.6;
 }
 .eventContent {
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
+}
+.event:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 28px rgba(75,0,110,0.3);
+}
 /* ===== CONTACT SECTION ===== */
 
 .contact-section {
