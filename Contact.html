@@ -3,8 +3,8 @@
     <head>
         <link rel="stylesheet" href="CSS/Main.css">
         <script src="https://code.jquery.com/jquery-4.0.0.min.js"defer></script>
-        <script tpye = "text/javascript" src = "JS/Index.js"defer></script>
-        <script tpye = "text/javascript" src = "JS/contacts.js"defer></script>
+        <script type = "text/javascript" src = "JS/Index.js"defer></script>
+        <script type = "text/javascript" src = "JS/contacts.js"defer></script>
         <title>Contact</title>
         <!--this link below will add a little image in the tab ourwebsites on when we have a logo created-->
         <link rel="icon" href="images/" type="image/x-icon">
@@ -57,24 +57,40 @@
         </div>
 
         <div class="content">
+
             <div class = "formContainer">
-                <div class="formImage"><p>hallo</p></div>
+                <div class="formImage">
+                    <img src="Resources/images/Contacts.png" alt="Contact form image">
+                </div>
+
                 <div class = "formDiv">
+                    <h2>Contact Student Services</h2>
+                    <p>Fill in the form below and we'll get back to you soon.</p>
                     <form class = "ContactForm" id = "contactForm">
                         <label for="name">Name:</label>
-                        <input type="text" id = "name">
+                        <input type="text" id = "name" placeholder="Full Name">
 
                         <label for="email">Email:</label>
-                        <input type = "text" id = "email">
+                        <input type = "text" id = "email" placeholder="example@example.com">
 
                         <label for="subject">Subject:</label>
-                        <input type = "text" id = "subject">
+                        <input type = "text" id = "subject" placeholder="enter your subject">
 
                         <label for="message">Message:</label>
-                        <textarea name="message" rows="10" cols="30" id = "message"></textarea>
-                        <input type="submit">
+                        <textarea name="message" rows="10" cols="30" id = "message" placeholder="Write your message here..."></textarea>
+                        <input type="submit" value="SEND MESSAGE">
                         <p id ="status"></p>
-                    </form> 
+                    </form>
+
+                    <div class="contact-info">
+                        <h3>Contact Info</h3>
+                        <div class="contact-info-grid">
+                            <div>Email: info@princesuniversity.ac.uk</div>
+                            <div>Location: Princes St, Edinburgh</div>
+                            <div>Phone: +44 (0)131 555 0100</div>
+                            <div>Postcode: EH2 2ER</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
