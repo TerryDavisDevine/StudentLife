@@ -379,7 +379,28 @@ nav ul li{
     flex: 1;
 }
 
+/* dropdown menu */
+.dropdown {
+  position: relative;
+}
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: -150px;
+  background-color: #f9f9f9;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.loginForm{
+    display: flex;
+    flex-direction: column;
+}
 /*Upcoming events section*/
 
 
