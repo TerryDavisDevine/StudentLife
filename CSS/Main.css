@@ -401,6 +401,9 @@ nav ul li{
     display: flex;
     flex-direction: column;
 }
+.loginForm > p{
+    color: red;
+}
 /*Upcoming events section*/
 
 

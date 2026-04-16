@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("form").submit(function(e){
+    $("#loginForm").submit(function(e){
         e.preventDefault();
         console.log("form submitted");
         let message = $("#message")
