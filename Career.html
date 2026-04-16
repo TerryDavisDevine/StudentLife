@@ -10,23 +10,30 @@
 <body>
 
 <!-- HEADER -->
-<div class="header">
-  <img src="images/logo.png" id="Logo">
+<header class = "header">
+    <img id="Logo" src="Resources/images/Logo-Sqr.png" alt="Prince's University Logo">
 
-  <nav>
-    <ul>
-      <li><a href="index.html" class="navLink">Home</a></li>
-      <li><a href="services.html" class="navLink">Services</a></li>
-      <li><a href="events.html" class="navLink">Events</a></li>
-      <li><a href="career.html" class="navLink">Careers</a></li>
-      <li><a href="contact.html" class="navLink">Contact</a></li>
-    </ul>
-  </nav>
+    <nav>
+        <ul>
+            <li><a class="navLink" href="index.html">Home</a></li>
+            <li><a class="navLink" href="StudentServices.html">Student Services</a></li>
+            <li><a class="navLink" href="Career.html">Careers</a></li>
+            <li><a class="navLink" href="StudentEvents.html">Student Events</a></li>
+            <li><a class="navLink" href="Contact.html">Contacts</a></li>
+        </ul>
+    </nav>
 
-  <div class="header-icons">
-    <button id="darkToggle">🌙</button>
-  </div>
-</div>
+    <div class="header-icons">
+        <button id="darkToggle" aria-label="Toggle dark mode">
+            <img id="moonIcon" src="Resources/images/Sun.png" alt="Switch to dark mode">
+            <img id="sunIcon"  src="Resources/images/Moon.png"  alt="Switch to light mode" style="display:none;">
+        </button>
+        <img id="profile" src="Resources/images/Profile-Light.png" alt="Profile Icon">
+        <button id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
 
 <!-- HERO -->
 <section class="careers-hero">
@@ -96,12 +103,29 @@
 </section>
 
 <!-- FOOTER -->
-<div class="footer">
-  <div class="footer-content">
-    <img src="images/logo.png">
-    <p>&copy; 2026 University. All rights reserved.</p>
-  </div>
-</div>
+<button id="scrollTop" aria-label="Scroll to top"> &#8679; </button>
+        
+
+        <footer class = "footer">
+            <div class="footer-content">
+                <img src="Resources/images/Logo-Sqr.png" alt="Prince's University Logo">
+                <p>princes st, Edinburgh<br>Scotland, EH2 2ER</p>
+            </div>
+
+            <div class="footer-socials">
+                <a href="#"><img src="Resources/images/Facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="Resources/images/Instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="Resources/images/Twitter.png" alt="Twitter"></a>
+            </div>
+
+              <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of service</a>
+            </div>
+
+        </footer>
+        <script src="JS/Index.js" defer></script>
+        <script src="JS/Main.js" defer></script>
 
 </body>
 </html>
