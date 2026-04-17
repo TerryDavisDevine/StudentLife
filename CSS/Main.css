@@ -343,14 +343,9 @@ nav ul li{
 .section-card-image {
     width: 100%;
     aspect-ratio: 4/3;
-    background-color: #FF00BF; /* replace with <img> */
     object-fit: cover;
 }
  
-/* placeholder img tag inside cards */
-.section-card img.section-card-image {
-    display: block;
-}
  
 .section-card-body {
     background-color: var(--card-text-bg);
@@ -404,8 +399,8 @@ nav ul li{
 .loginForm > p{
     color: red;
 }
-/*Upcoming events section*/
 
+/*Upcoming events section*/
 
 .events-section {
     background-color: var(--bg-section);
@@ -472,7 +467,6 @@ nav ul li{
     position: relative;
     width: 100%;
     aspect-ratio: 3/2;
-    background-color: #FF00BF; /* replace with <img> */
     overflow: hidden;
 }
  
@@ -520,7 +514,6 @@ nav ul li{
     font-size: 12px;
     margin: 0;
 }
- 
 
 /*Campuses information*/
 
@@ -545,12 +538,12 @@ nav ul li{
  
 .campus-card {
     display: grid;
-    grid-template-columns: 2fr 3fr;  /* image left, text right */
+    grid-template-columns: 2fr 3fr;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 3px 12px rgba(0,0,0,0.12);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 160px;  /* fixed height keeps it compact */
+    height: 160px;
     width: 500px;
     will-change: transform;
     transform: translateZ(0);
@@ -567,7 +560,6 @@ nav ul li{
     height: 160px;
     object-fit: cover;
     display: block;
-    background-color: #FF00BF;
 }
  
 .campus-card-body {
@@ -597,9 +589,7 @@ nav ul li{
     margin: 0;
 }
 
-
 /*Footer content*/
-
 
 .footer{
     background-color: var(--footer-bg);
@@ -664,9 +654,7 @@ nav ul li{
 
 .footer-links a:hover { color: var(--brand-purple-light); }
 
-
 /*Top of screen button*/
-
 
 #scrollTop {
     position: fixed;
@@ -699,9 +687,7 @@ nav ul li{
  
 #scrollTop:hover { transform: translateY(-3px); }
 
-
 /*Screen size responsive*/
-
 
 @media (max-width: 900px) {
     .events-grid {
@@ -709,8 +695,10 @@ nav ul li{
     }
 }
 
+/* Size 768 will hide the desktop nav-bar and show hamburger instead*/
+
 @media (max-width: 768px) {
-    /* Hides the desktop nav-bar and shows hamburger */
+
     nav { display: none; }
     #hamburger { display: flex; }
  
@@ -821,7 +809,8 @@ nav ul li{
     transform: translateY(-6px);
     box-shadow: 0 10px 28px rgba(75,0,110,0.3);
 }
-/* ===== CAREERS PAGE ===== */
+
+/* CAREERS PAGE */
 
 .careers-hero {
   background: var(--brand-purple);
@@ -867,6 +856,7 @@ nav ul li{
 }
 
 /* JOBS */
+
 .careers-jobs {
   padding: 60px 5%;
   background: var(--bg-section);
@@ -900,6 +890,7 @@ nav ul li{
 }
 
 /* BUTTON */
+
 .apply-btn {
   background: var(--brand-red);
   color: white;
@@ -916,6 +907,7 @@ nav ul li{
 }
 
 /* CTA */
+
 .careers-cta {
   text-align: center;
   padding: 60px 20px;
@@ -925,6 +917,7 @@ nav ul li{
 
 
 /* contact page */
+
 .formContainer {
     display: flex;
     flex-direction: row;
