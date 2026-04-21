@@ -53,6 +53,12 @@ function createEvent(details){
 function showEvents(events){
     let allEvents = events.events;
     let eventSpace = document.getElementById("eventSpace");
+    if(allEvents.length == 0){
+      let p = document.createElement("p");
+      p.innerHTML = "No upcoming events";
+      p.style.textAlign="center";
+      eventSpace.appendChild(p);
+    }
     for(let i =0; i<allEvents.length;i++){
       eventSpace.appendChild(createEvent(allEvents[i]));
    }

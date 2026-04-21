@@ -4,7 +4,7 @@
     --brand-purple-light: #d1b3ff;
     --brand-red: #cc0000;
     --brand-red-hover: #ff1a1a;
-    --bg: #ffffff;
+    --bg: #F9F8F7;
     --bg-section: #e8e8e8;
     --text: #111111;
     --text-muted: #555555;
@@ -44,6 +44,7 @@ body{
     background-color: var(--bg);
     color: var(--text);
     transition: background-color var(--transition), color var(--transition);
+    overflow-x: hidden
 }
 
 
@@ -374,7 +375,7 @@ nav ul li{
     flex: 1;
 }
 
-/* dropdown menu */
+/* dropdown accounts form */
 .dropdown {
   position: relative;
 }
@@ -589,6 +590,15 @@ nav ul li{
     margin: 0;
 }
 
+/*Student Services Title*/
+.content-h1{
+    text-decoration: underline;
+    text-align: center;
+    color: var(--text);
+    font-size: 32px;
+    margin-bottom: -5px;
+}
+
 /*Footer content*/
 
 .footer{
@@ -757,6 +767,7 @@ nav ul li{
     .campus-card { grid-template-columns: 1fr; }
     .campus-card-image { min-height: 180px; }
 }
+/* events */
 .event{
     border-color: #000000;
     border: solid;
