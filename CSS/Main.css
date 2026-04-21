@@ -824,8 +824,8 @@ nav ul li{
 /* CAREERS PAGE */
 
 .careers-hero {
-  background: var(--brand-purple);
-  color: white;
+  background: var(--bg-section);
+  color: var(--text);
   text-align: center;
   padding: 80px 20px;
 }
@@ -836,7 +836,7 @@ nav ul li{
 }
 
 .careers-hero p {
-  color: var(--brand-purple-light);
+  color: var(--text-muted);
 }
 
 /* BENEFITS */
@@ -922,8 +922,8 @@ nav ul li{
 .careers-cta {
   text-align: center;
   padding: 60px 20px;
-  background: var(--brand-purple);
-  color: white;
+  background: var(--bg);
+  color: var(--text);
 }
 
 
