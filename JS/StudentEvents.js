@@ -51,7 +51,7 @@ function createEvent(details){
 }
 //add elements to the page
 function showEvents(events){
-    let allEvents = []//events.events;
+    let allEvents = events.events;
     let eventSpace = document.getElementById("eventSpace");
     if(allEvents.length == 0){
       let p = document.createElement("p");

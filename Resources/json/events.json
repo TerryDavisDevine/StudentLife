@@ -24,8 +24,8 @@
         "Time": "17:00 - 21:00",
         "Location": "Edinburgh campus",
         "Desc": "A university open day for all students who would like to learn more about our university, students can arrive from anytime between 17:00 - 19:00 and are welcome to explore the campus with a tour or at their own leisure.",
-        "Img":"/StudentLife/Resources/images/Edinburgh.png",
-        "alt":"../Resources/images/Edinburgh.png"
+        "Img":"/StudentLife/Resources/images/EdinburghEventSmall.png",
+        "alt":"../Resources/images/EdinburghEventSmall.png"
       },
       {
         "Name": "Careers day for engineering students",
@@ -42,8 +42,8 @@
         "Time": "13:00 - 15:00",
         "Location": "Beijing campus football pitch",
         "Desc": "A friendly student football match between two teams of our physical education students, all students are welcome to watch the match",
-        "Img":"/StudentLife/Resources/images/Football.png",
-        "alt":"../Resources/images/Football.png"
+        "Img":"/StudentLife/Resources/images/football.webp",
+        "alt":"../Resources/images/football.webp"
       }
     ]
   }
