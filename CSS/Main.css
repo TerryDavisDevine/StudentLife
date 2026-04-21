@@ -4,7 +4,7 @@
     --brand-purple-light: #d1b3ff;
     --brand-red: #cc0000;
     --brand-red-hover: #ff1a1a;
-    --bg: #ffffff;
+    --bg: #F9F8F7;
     --bg-section: #e8e8e8;
     --text: #111111;
     --text-muted: #555555;
@@ -587,6 +587,15 @@ nav ul li{
     color: #cccccc;
     font-size: 12px;
     margin: 0;
+}
+
+/*Student Services Title*/
+.content-h1{
+    text-decoration: underline;
+    text-align: center;
+    color: var(--text);
+    font-size: 32px;
+    margin-bottom: -5px;
 }
 
 /*Footer content*/
