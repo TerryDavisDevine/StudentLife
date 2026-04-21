@@ -374,7 +374,7 @@ nav ul li{
     flex: 1;
 }
 
-/* dropdown menu */
+/* dropdown accounts form */
 .dropdown {
   position: relative;
 }
@@ -757,6 +757,7 @@ nav ul li{
     .campus-card { grid-template-columns: 1fr; }
     .campus-card-image { min-height: 180px; }
 }
+/* events */
 .event{
     border-color: #000000;
     border: solid;
